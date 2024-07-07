@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Home from './components/home';
-import StationList from './components/stationList'
-import StationDetails from './components/stationDetails'
-import AddStation from './components/addStation'
-import About from './components/about'
+import Home from './components/Home';
+import StationList from './components/StationList'
+import StationDetails from './components/StationDetails'
+import AddStation from './components/AddStation'
+import About from './components/About'
 
 
 function App() {
