@@ -41,7 +41,7 @@ function AddStation() {
       <br />
       <label>
         Station Price:
-        <input type="text" value={name} onChange={(e) => setPrice(e.target.value)} />
+        <input type="text" value={price} onChange={(e) => setPrice(e.target.value)} />
       </label>
       <br />
     </form>
