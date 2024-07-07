@@ -13,10 +13,10 @@ function App() {
       <div>
         <nav>
           <ul>
-            <li><link to="/">Home</link></li>
-            <li><link to="/station-list">List of Stations</link></li>
-            <li><link to="/add-station">Add a station!</link></li>
-            <li><link to="/about">About this site</link></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/station-list">List of Stations</Link></li>
+            <li><Link to="/add-station">Add a station!</Link></li>
+            <li><Link to="/about">About this site</Link></li>
           </ul>
         </nav>
         <Routes>
