@@ -19,7 +19,9 @@ function StationDetails(){
             <h2>{station.name}</h2>
             <h3>{station.price}</h3>
             <p>{station.description}</p>
-            <img src={station.image} alt="Weather Station" />
+            <div className="img-container">
+                <img src={station.image} alt="Weather Station" />
+            </div>
         </div>
     )
 }

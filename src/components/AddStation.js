@@ -8,12 +8,12 @@ function AddStation() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    fetch('http://localhost:3001/stations', {
+    fetch('http://localhost:3000/stations', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
     },
-    body: JSON.stringify ({ name, description, image, price })
+    body: JSON.stringify({ name, description, image, price })
   }).then(() => {
     setName('');
     setDescription('');
@@ -22,7 +22,8 @@ function AddStation() {
   })
 }
   return (
-    <form onSubmit = {handleSubmit}> 
+    
+    <form> 
       <h2>Add Station</h2>
       <label>
         Station Name:
@@ -44,7 +45,9 @@ function AddStation() {
         <input type="text" value={price} onChange={(e) => setPrice(e.target.value)} />
       </label>
       <br />
+      <button onSubmit = {handleSubmit}>SUBMIT</button>
     </form>
+    
   )
 }
 
