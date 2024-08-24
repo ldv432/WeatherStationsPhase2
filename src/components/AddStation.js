@@ -6,9 +6,7 @@ function AddStation() {
   const [image, setImage] = useState('')
   const [price, setPrice] = useState('')
   
-  const handleChange = (e) => {
-    
-  }
+ 
 
   const handleSubmit = (e) => {
     e.preventDefault()
