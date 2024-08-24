@@ -5,6 +5,10 @@ function AddStation() {
   const [description, setDescription] = useState('')
   const [image, setImage] = useState('')
   const [price, setPrice] = useState('')
+  
+  const handleChange = (e) => {
+    
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -27,22 +31,32 @@ function AddStation() {
       <h2>Add Station</h2>
       <label>
         Station Name:
-        <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
+        <input 
+        type="text" 
+        value={name} 
+        onChange={(e) => setName(e.target.value)} />
       </label>
       <br />
       <label>
         Station Description:
-        <input type="text" value={description} onChange={(e) => setDescription(e.target.value)} />
+        <input 
+        type="text" 
+        value={description} 
+        onChange={(e) => setDescription(e.target.value)} />
       </label>
       <br />
       <label>
         Station Image URL:
-        <input type="text" value={image} onChange={(e) => setImage(e.target.value)} />
+        <input type="text" 
+        value={image} 
+        onChange={(e) => setImage(e.target.value)} />
       </label>
       <br />
       <label>
         Station Price:
-        <input type="text" value={price} onChange={(e) => setPrice(e.target.value)} />
+        <input type="text" 
+        value={price} 
+        onChange={(e) => setPrice(e.target.value)} />
       </label>
       <br />
       <button onSubmit = {handleSubmit}>SUBMIT</button>
