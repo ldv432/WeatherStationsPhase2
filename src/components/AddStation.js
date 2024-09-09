@@ -25,7 +25,7 @@ function AddStation() {
 }
   return (
     
-    <form> 
+    <form onSubmit = {handleSubmit}> 
       <h2>Add Station</h2>
       <label>
         Station Name:
@@ -57,7 +57,7 @@ function AddStation() {
         onChange={(e) => setPrice(e.target.value)} />
       </label>
       <br />
-      <button onSubmit = {handleSubmit}>SUBMIT</button>
+      <button>SUBMIT</button>
     </form>
     
   )
