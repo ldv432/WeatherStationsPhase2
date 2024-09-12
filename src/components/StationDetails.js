@@ -4,7 +4,6 @@ import { useParams } from "react-router-dom";
 function StationDetails(){
     const { id }  = useParams()
     const [ station, setStation ] = useState()
-   console.log(id)
 
     useEffect(() => {
         fetch(`http://localhost:3000/stations/${id}/`)

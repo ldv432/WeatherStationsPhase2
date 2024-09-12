@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect }from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './components/Home';
 import StationList from './components/StationList'
@@ -8,6 +8,15 @@ import About from './components/About'
 
 
 function App() {
+
+  const [stations, setStations] = useState([])
+
+  useEffect(() => {
+    fetch('http://localhost:3000/stations')
+      .then(res => res.json())
+      .then(data => setStations(data))
+  }, [])
+
   return(
     <Router>
       <div>

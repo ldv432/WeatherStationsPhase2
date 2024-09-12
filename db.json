@@ -1,7 +1,32 @@
 {
-    "stations": [
-      { "id": 1, "name": "Tempest Weatherflow System", "description": "Centered around the Tempest Weather Station and the powerful Tempest app with a guaranteed better forecast, the Tempest Weather System is the ultimate tool for managing your smart home, garden, and all weather-driven decisions.  ", "image": "https://shop.tempest.earth/cdn/shop/files/tempest-phone-purple-2024_1024x1024@2x.jpg?v=1717687257", "price": 339.99},
-      { "id": 2, "name": "Ambient Weather WS-2902", "description": "Ambient Weather's best-selling Personal Wi-Fi Weather Station, the WS-2902, allows you to monitor your home and backyard weather conditions with a brilliant, easy-to-read LCD color display.", "image": "https://ambientweather.com/media/catalog/product/a/w/aw-ws-2902.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=600&width=400&canvas=400:600", "price": 189.99},
-      { "id": 3, "name": "La Crosse Technology C85845-INT", "description": "Full color display gives you current temperatures & humidity, with a future forecast whether it could be sunny or rainy to snowy. Features accurate, self-set atomic time & date with automatic DST updates. Records min/max values and alerts you of extreme temperatures.", "image": "https://m.media-amazon.com/images/I/81iu0c86V8L._AC_SL1500_.jpg", "price": 48.98}
-    ]
-  }
+  "stations": [
+    {
+      "id": 1,
+      "name": "Tempest Weatherflow System",
+      "description": "Centered around the Tempest Weather Station and the powerful Tempest app with a guaranteed better forecast, the Tempest Weather System is the ultimate tool for managing your smart home, garden, and all weather-driven decisions.  ",
+      "image": "https://shop.tempest.earth/cdn/shop/files/tempest-phone-purple-2024_1024x1024@2x.jpg?v=1717687257",
+      "price": 339.99
+    },
+    {
+      "id": 2,
+      "name": "Ambient Weather WS-2902",
+      "description": "Ambient Weather's best-selling Personal Wi-Fi Weather Station, the WS-2902, allows you to monitor your home and backyard weather conditions with a brilliant, easy-to-read LCD color display.",
+      "image": "https://ambientweather.com/media/catalog/product/a/w/aw-ws-2902.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=600&width=400&canvas=400:600",
+      "price": 189.99
+    },
+    {
+      "id": 3,
+      "name": "La Crosse Technology C85845-INT",
+      "description": "Full color display gives you current temperatures & humidity, with a future forecast whether it could be sunny or rainy to snowy. Features accurate, self-set atomic time & date with automatic DST updates. Records min/max values and alerts you of extreme temperatures.",
+      "image": "https://m.media-amazon.com/images/I/81iu0c86V8L._AC_SL1500_.jpg",
+      "price": 48.98
+    },
+    {
+      "name": "abcd ",
+      "description": "abcd",
+      "image": "",
+      "price": "1000",
+      "id": 4
+    }
+  ]
+}
