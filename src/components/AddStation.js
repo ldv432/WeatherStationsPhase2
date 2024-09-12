@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function AddStation() {
+function AddStation({stations, setStations}) {
   const [name, setName] = useState('')
   const [description, setDescription] = useState('')
   const [image, setImage] = useState('')
@@ -16,12 +16,13 @@ function AddStation() {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify({ name, description, image, price })
-  }).then(() => {
-    setName('');
-    setDescription('');
-    setImage('');
-    setPrice('')
   })
+  .then(response => response.json())
+  .then(data => setStations([...stations, data]))
+  setName('');
+  setDescription('');
+  setImage('');
+  setPrice('')
 }
   return (
     

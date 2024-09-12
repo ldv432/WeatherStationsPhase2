@@ -10,6 +10,7 @@ import About from './components/About'
 function App() {
 
   const [stations, setStations] = useState([])
+  console.log(stations)
 
   useEffect(() => {
     fetch('http://localhost:3000/stations')
@@ -30,8 +31,8 @@ function App() {
         </nav>
         <Routes>
           <Route path="/" element={<Home />}></Route>
-          <Route path="/station-list" element={<StationList />}></Route>
-          <Route path="/add-station" element={<AddStation />}></Route>
+          <Route path="/station-list" element={<StationList stations={stations} setStations={setStations} />}></Route>
+          <Route path="/add-station" element={<AddStation stations={stations} setStations={setStations}/>}></Route>
           <Route path="/stations/:id" element={<StationDetails />}></Route>
           <Route path="/about" element={<About />}></Route>
         </Routes>

@@ -1,16 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom'
 
-function StationList() {
+function StationList( {stations} ) {
 
-  const [stations, setStations] = useState([])
   const [filterAmount, setFilterAmount] = useState(0)
-
-  useEffect(() => {
-    fetch('http://localhost:3000/stations')
-      .then(res => res.json())
-      .then(data => setStations(data))
-  }, [])
 
   const filteredStations = stations.filter(station => {
     if (filterAmount === 0) return true
@@ -34,4 +27,4 @@ function StationList() {
   )
 }
 
-export default StationList  
+export default StationList
